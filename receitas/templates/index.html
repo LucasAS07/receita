@@ -1,38 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas Caseirast</title>
-</head>
+{% include 'parials/menu.html' %}
+<!-- ##### Best Receipe Area Start ##### -->
+<section class="best-receipe-area">
+    <div class="container">
+        <div class="row">
+            <!-- Single Best Receipe Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
+                    <div class="receipe-content">
+                        <a href="receita.html">
+                            <h5>Nome da receita</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<body>
-    <h1>Receitas Caseiras</h1>
-    <h2>Sejá Bem Vindo ao Site</h2>
+            <!-- Single Best Receipe Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
+                    <div class="receipe-content">
+                        <a href="receita.html">
+                            <h5>Nome da receita</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-    <table>
-        <thead>
-            <tr>
-                <td>Nome da Receita</td>
-                <td>Ingredientes</td>
-                <td>Modo de Preparo</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Bolo de Fubá</td>
-                <td>1 xicara e 1/2 (chá) de fubá mimoso, 1 xicara (chá) de Farinha de Trigo, 2 xícaras (chá) de açúcar,
-                    4 ovos, 1 xicara (chá) de óleo, 1 xicara (chá) de leite, 1 colher (sopa) de fermento em pó, 1 colher
-                    de sementes de erva-doce, 1 pitada de sal</td>
-                <td>Coloque no liquidificador os ovos, o açúcar, o óleo, o leite e bata. Acrescente o fubá, a farinha de
-                    trigo e o fermento. Bata mais um pouco. Misture com uma colher as sementes de erva-doce. Coloque em
-                    uma forma untada com manteiga e farinha de trigo. Leve para assar em forno preaquecido a 180°C até
-                    dourar.</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+            <!-- Single Best Receipe Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
+                    <div class="receipe-content">
+                        <a href="receita.html">
+                            <h5>Nome da receita</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-</html>
+            <!-- Single Best Receipe Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
+                    <div class="receipe-content">
+                        <a href="receita.html">
+                            <h5>Nome da receita</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Best Receipe Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
+                    <div class="receipe-content">
+                        <a href="receita.html">
+                            <h5>Nome da receita</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Best Receipe Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
+                    <div class="receipe-content">
+                        <a href="receita.html">
+                            <h5>Nome da receita</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Best Receipe Area End ##### -->
+
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                <!-- Footer Social Info -->
+                <div class="footer-social-info text-right">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <!-- Footer Logo -->
+                <div class="footer-logo">
+                    <a href="{% url 'index' %}"><img src="{% static 'img/core-img/logo.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ##### Footer Area Start ##### -->
+
+<!-- ##### All Javascript Files ##### -->
+<!-- jQuery-2.2.4 js -->
+{% endblock %}
