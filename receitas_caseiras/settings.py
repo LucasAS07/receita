@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'receitas_caseiras.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'receitas_caseira',
+        'USER': 'postgres',
+        'PASSWORD': '33715157',
+        'HOST': 'localhost'
     }
 }
 
